@@ -1,0 +1,30 @@
+.header {
+  margin-bottom: 44px;
+  padding: 24px 0;
+  background-color: var(--color-primary);
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    font-family: var(--font-primary);
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 56px;
+    align-items: center;
+    color: var(--color-white);
+  }
+
+  &__nav {
+    .nav__list {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .nav__item:not(:last-child) {
+      margin-right: 25px;
+    }
+  }
+}

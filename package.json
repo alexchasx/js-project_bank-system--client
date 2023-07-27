@@ -1,0 +1,38 @@
+{
+  "name": "bank-diploma",
+  "version": "1.0.0",
+  "author": "a.s.chasovnikov",
+  "description": "Банковская система хранения и операций с криптовалютными средствами",
+  "main": "index.html",
+  "keywords": [],
+  "license": "ISC",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack --mode production",
+    "dev": "cross-env NODE_ENV=development webpack serve --mode development"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.8.1",
+    "css-minimizer-webpack-plugin": "^4.2.2",
+    "cypress": "^12.14.0",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.7.5",
+    "sass": "^1.63.2",
+    "sass-loader": "^13.3.1",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.86.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.13.0"
+  },
+  "dependencies": {
+    "chart.js": "^4.3.0",
+    "choices.js": "^10.2.0",
+    "just-validate": "^4.2.0",
+    "moment": "^2.29.4",
+    "navigo": "^8.11.1",
+    "redom": "^3.29.1",
+    "validator": "^13.9.0",
+    "ymaps": "^0.2.1"
+  }
+}

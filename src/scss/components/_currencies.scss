@@ -1,0 +1,171 @@
+.currencies {
+  margin-bottom: 50px;
+
+  &__title {
+    margin-bottom: 56px;
+    font-family: var(--font-primary);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+  }
+
+  &__wrap {
+    display: flex;
+    gap: 49px;
+  }
+
+  &__left-block {
+    width: 588px;
+  }
+
+  .card {
+    box-shadow: var(--box-shadow);
+    border-radius: 50px;
+    padding: 50px;
+
+    &__title {
+      margin-bottom: 25px;
+      font-family: var(--font-primary);
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 23px;
+      letter-spacing: -0.02em;
+    }
+  }
+
+  .form {
+    &__form {
+      display: flex;
+      flex-direction: row;
+      gap: 25px;
+
+      .field-container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .field-wrap {
+        display: flex;
+        align-items: center;
+        font-family: var(--font-second);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.01em;
+        color: var(--color-dark);
+      }
+
+      label {
+        margin-right: 8px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: -0.01em;
+      }
+
+      .currencie-list-wrap {
+        label {
+          margin-right: 20px;
+        }
+      }
+
+      .currencie-list-wrap:first-child {
+        margin-right: 20px;
+      }
+    }
+
+    &__submit {
+      margin: 0;
+      padding: 46px 13px;
+      width: 104px;
+      height: 113px;
+    }
+  }
+}
+
+.your-currencies {
+  margin-bottom: 44px;
+  width: 100%;
+}
+
+.realtime-exchange.card {
+  box-shadow: none;
+  padding-right: 62px;
+  width: 703px;
+  background-color: var(--color-bg-light);
+
+  .arrow {
+    position: relative;
+    bottom: 3px;
+    left: 12px;
+    border: 10px solid transparent;
+    width: 5px;
+    height: 5px;
+
+    &--green {
+      border-bottom: 10px solid var(--color-green);
+    }
+
+    &--red {
+      bottom: 0px;
+      top: 6px;
+      border-top: 10px solid var(--color-red);
+    }
+
+    &--grey {
+      border: none;
+    }
+  }
+}
+
+.params {
+  font-family: var(--font-primary);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.1em;
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 25px;
+  }
+
+  &__cell {
+    &--1 {
+      display: flex;
+    }
+
+    &--2,
+    .dotted {
+      padding-left: 10px;
+      font-weight: 400;
+    }
+  }
+}
+
+.dotted {
+  padding: 0 10px;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.currencies__container {
+  position: relative;
+
+  #ya-map {
+    width: 100%;
+    height: 100%;
+
+    .ymaps-2-1-79-map {
+      height: 728px !important;
+    }
+  }
+}
